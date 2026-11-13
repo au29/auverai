@@ -39,7 +39,9 @@ npx wrangler login
 npm run deploy
 ```
 
-The deploy command publishes to the `auverai` Pages project. Review the account and project before running it. Connect `auverai.com` through the Pages project's Custom domains settings after deployment. This project has not changed DNS or deployed to a live account.
+The deploy command publishes to the `auverai` Pages project. Review the account and project before running it.
+
+The project is deployed in the AUVERAI Cloudflare account at https://auverai.pages.dev. The GitHub integration deploys commits to `main` automatically. Both `auverai.com` and `www.auverai.com` are configured as Pages custom domains, with proxied CNAME records pointing to `auverai.pages.dev`. The canonical website URL is https://auverai.com.
 
 Cloudflare documentation: https://developers.cloudflare.com/pages/framework-guides/nextjs/deploy-a-static-nextjs-site/
 Next.js export documentation: https://nextjs.org/docs/app/guides/static-exports
