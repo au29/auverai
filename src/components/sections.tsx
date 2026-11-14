@@ -98,36 +98,36 @@ const capabilities = [
   {
     icon: Layers3,
     number: "01",
-    title: "Ideas into independent ventures.",
+    title: "We build digital ventures.",
     description:
-      "We bring product thinking, design and engineering together to create digital businesses with a purpose of their own.",
+      "We bring product strategy, design and engineering together to develop focused digital products and independent businesses.",
     tags: ["Venture building", "SaaS & digital products"],
     Illustration: ProductIllustration,
   },
   {
     icon: Workflow,
     number: "02",
-    title: "Intelligence that does the work.",
+    title: "We put AI to work.",
     description:
-      "Practical AI and connected workflows that help businesses spend less time on repetitive tasks and more time moving forward.",
+      "We help businesses apply AI and automation to reduce repetitive tasks, connect workflows and give their teams more time for valuable work.",
     tags: ["Applied AI", "Automation & agents"],
     Illustration: WorkflowIllustration,
   },
   {
     icon: Code2,
     number: "03",
-    title: "Strong ideas. Strong foundations.",
+    title: "We engineer reliable software.",
     description:
-      "Thoughtful interfaces, dependable software and scalable infrastructure. Built with the care that lasting products deserve.",
+      "We design and build interfaces, software and infrastructure that help businesses deliver dependable digital experiences.",
     tags: ["Software engineering", "Platforms & infrastructure"],
     Illustration: EngineeringIllustration,
   },
   {
     icon: Compass,
     number: "04",
-    title: "A clearer path to what’s possible.",
+    title: "We shape product direction.",
     description:
-      "We connect technology and business thinking to find useful opportunities, shape better experiences and bring new ideas to life.",
+      "We help businesses clarify their product direction, identify useful opportunities and connect technology decisions with commercial goals.",
     tags: ["Product strategy", "Digital innovation"],
     Illustration: StrategyIllustration,
   },
@@ -287,23 +287,23 @@ export function Approach() {
   const steps = [
     {
       number: "01",
-      title: "Find the right problem.",
-      body: "Start with people, real needs and a clear opportunity. Ask better questions before deciding what to build.",
-      labels: ["Listen", "Explore", "Define"],
+      title: "We find the right problem.",
+      body: "We work with businesses to understand their goals, the needs of their users and the opportunities where technology can make a difference.",
+      labels: ["Research", "Discovery", "Strategy"],
       icon: Compass,
     },
     {
       number: "02",
-      title: "Make the idea real.",
-      body: "Connect strategy, design and engineering. Test assumptions, build with intent and focus on what is useful.",
-      labels: ["Design", "Develop", "Validate"],
+      title: "We turn ideas into products.",
+      body: "We combine strategy, design and engineering to develop useful products, test assumptions and turn a clear direction into working software.",
+      labels: ["Design", "Engineering", "Validation"],
       icon: Code2,
     },
     {
       number: "03",
-      title: "Build for what comes next.",
-      body: "Launch thoughtfully, learn from real use and keep improving. A product’s first release is only its beginning.",
-      labels: ["Launch", "Learn", "Evolve"],
+      title: "We support lasting growth.",
+      body: "We help businesses prepare for launch, learn from real use and improve their products as customer needs and ambitions evolve.",
+      labels: ["Launch", "Learning", "Improvement"],
       icon: Layers3,
     },
   ];
@@ -312,7 +312,7 @@ export function Approach() {
       <div className="page-container">
         <div className="section-heading">
           <div>
-            <Eyebrow>How we think</Eyebrow>
+            <Eyebrow>How we work</Eyebrow>
             <h2 className="section-title mt-5">
               Curiosity starts it.
               <br />
@@ -320,8 +320,9 @@ export function Approach() {
             </h2>
           </div>
           <p className="section-description">
-            Good technology is only part of the story. We believe the best
-            businesses connect a meaningful problem with a well-built solution.
+            Our approach connects business goals with practical delivery. We
+            support each stage, from understanding an opportunity to developing
+            and improving the product.
           </p>
         </div>
         <div className="mt-14 grid gap-10 md:grid-cols-3 md:gap-8">
@@ -413,9 +414,8 @@ export function ContactCTA() {
           What could we build together?
         </h2>
         <p className="mx-auto mt-5 max-w-md text-base leading-7 text-balance text-muted-foreground">
-          An idea, a challenge, or a new possibility.
-          <br />
-          We’d like to hear what you have in mind.
+          We help businesses turn new ideas and complex challenges into
+          practical digital solutions.
         </p>
         <Button
           className="mt-8 h-11 gap-5 px-5 shadow-sm"

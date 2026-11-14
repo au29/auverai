@@ -64,11 +64,11 @@ export const faqs = [
   {
     question: "What kinds of projects are a good fit?",
     answer:
-      "We focus on digital products, SaaS platforms, AI-powered workflows, business software and platform modernisation. Start with the problem you want to solve, and we can explore whether there is a fit.",
+      "We focus on digital products, SaaS platforms, AI-powered workflows, business software and platform modernisation. We help businesses assess the opportunity and identify an approach that fits their goals.",
   },
   {
     question: "How can we start a conversation?",
     answer:
-      "Email contact@auverai.com or use the contact page to prepare a project introduction. Share your idea, what you are trying to achieve and where you are in the process.",
+      "We welcome project and partnership enquiries at contact@auverai.com. Our contact page prepares an email introduction with your goals, project details and area of interest.",
   },
 ];

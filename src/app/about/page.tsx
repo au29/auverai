@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About AUVERAI",
   description:
-    "Meet AUVERAI Innovations, a technology and venture-building company registered in Meydan Free Zone, Dubai, UAE.",
+    "AUVERAI Innovations is a technology and venture-building company registered in Meydan Free Zone, Dubai, UAE.",
   alternates: { canonical: "/about/" },
 };
 
@@ -72,18 +72,18 @@ export default function AboutPage() {
             {[
               {
                 icon: Focus,
-                title: "Useful over complicated.",
-                text: "Start with a real need. Keep the experience clear. Make technology serve the people who use it.",
+                title: "Technology with a purpose.",
+                text: "We focus on real business needs and clear user experiences, so the technology we build helps people work more effectively.",
               },
               {
                 icon: Layers3,
-                title: "Build with ownership.",
-                text: "Think beyond a delivery date. Develop products and brands with a clear purpose and a long-term direction.",
+                title: "Care beyond delivery.",
+                text: "We take a long-term view of the products and brands we develop, with attention to maintainability, usability and room to grow.",
               },
               {
                 icon: Globe2,
-                title: "Stay open to possibility.",
-                text: "Let good questions lead to new ideas. Remain curious about industries, technologies and opportunities.",
+                title: "Curiosity across industries.",
+                text: "We explore new industries and technologies with an open mind, looking for opportunities to solve meaningful problems.",
               },
             ].map(({ icon: Icon, title, text }) => (
               <div key={title}>

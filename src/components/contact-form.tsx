@@ -38,10 +38,11 @@ export function ContactForm() {
   return (
     <div className="rounded-2xl border bg-card p-6 shadow-sm shadow-black/3 sm:p-8">
       <h2 className="text-xl font-semibold tracking-tight">
-        Tell us what you’re thinking.
+        How can we help?
       </h2>
       <p className="mt-2 text-sm leading-6 text-muted-foreground">
-        A few details are a good place to start.
+        Your project goals and priorities help us understand the support you
+        need.
       </p>
       <form
         className="mt-7 space-y-5"
@@ -137,7 +138,7 @@ export function ContactForm() {
             <Check className="size-4 text-primary" /> Your draft is ready.
           </p>
           <p className="mt-2 text-xs leading-5 text-muted-foreground">
-            Open it in your email app, review it, then send it to {site.email}.
+            The draft can be reviewed and sent to {site.email} in your email app.
           </p>
           <div className="mt-4 flex flex-wrap gap-2">
             <Button

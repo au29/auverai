@@ -5,9 +5,9 @@ import { ContactForm } from "@/components/contact-form";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Let’s build something",
+  title: "How we can help",
   description:
-    "Talk to AUVERAI about a new venture, AI, software engineering or a technology partnership. Contact us at contact@auverai.com.",
+    "AUVERAI helps businesses with digital products, AI and software engineering. Project and partnership enquiries: contact@auverai.com.",
   alternates: { canonical: "/contact/" },
 };
 
@@ -18,17 +18,17 @@ export default function ContactPage() {
       className="page-container grid gap-14 py-18 sm:py-24 lg:grid-cols-[1fr_1.12fr]"
     >
       <div>
-        <Eyebrow>Start a conversation</Eyebrow>
+        <Eyebrow>How we can help</Eyebrow>
         <h1 className="page-title mt-6">
-          Good things
+          Helping your
           <br />
-          start with
+          business move
           <br />
-          <span className="text-primary">“what if?”</span>
+          <span className="text-primary">forward.</span>
         </h1>
         <p className="mt-6 max-w-sm text-base leading-7 text-muted-foreground">
-          Bring us your idea, your challenge, or a question worth exploring.
-          Let’s see what we could build together.
+          We help businesses develop digital products, apply AI and solve
+          technology challenges. We welcome project and partnership enquiries.
         </p>
         <div className="mt-12 space-y-6">
           <div className="flex gap-4">
@@ -37,7 +37,7 @@ export default function ContactPage() {
             </span>
             <div>
               <p className="text-[11px] text-muted-foreground">
-                Prefer a direct introduction?
+                Project & partnership enquiries
               </p>
               <a
                 href={`mailto:${site.email}`}
@@ -64,7 +64,6 @@ export default function ContactPage() {
         </div>
         <p className="mt-10 max-w-sm text-xs leading-6 text-muted-foreground">
           {site.legalName} is registered in Meydan Free Zone, Dubai, UAE.
-          Get in touch to discuss a project, a partnership or a new opportunity.
         </p>
       </div>
       <ContactForm />

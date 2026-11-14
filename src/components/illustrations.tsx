@@ -84,7 +84,7 @@ export function VentureMap() {
         <div>
           <span className="node-overline">02 / CONNECT</span>
           <strong>Applied intelligence</strong>
-          <p>Make technology work smarter</p>
+          <p>Technology that works smarter</p>
         </div>
         <span className="node-status" />
       </div>

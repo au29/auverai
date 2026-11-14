@@ -60,6 +60,8 @@ Optional public environment settings are documented in `.env.example`. They are 
 
 Company copy reflects AUVERAI Innovations L.L.C-FZ as a registered company in Meydan Free Zone, Dubai, UAE, based on the supplied business licence issued on 11 November 2026. The venture ecosystem remains prospective; company registration does not establish individual venture ownership or launch status. No customers, testimonials, financial performance or venture launch claims were invented. The licence document and personal details are not published with the site.
 
+Marketing copy uses AUVERAI's own voice to explain what we do, how we work and how we help businesses. Describe our approach and values as statements about the company, rather than instructions to the reader. Buttons and form controls should still clearly describe their actions.
+
 ## Contact behaviour
 
 The contact page validates an introduction locally, then prepares a `mailto:` draft addressed to `contact@auverai.com`. The visitor reviews and sends it in their email app. A copyable draft is available if no email app is configured. The website does not send email or store enquiries on a server. No analytics or advertising trackers are installed. If server-side lead capture is later added, update the privacy page and use an appropriate protected delivery endpoint.

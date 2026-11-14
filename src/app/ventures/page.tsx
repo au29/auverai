@@ -7,7 +7,7 @@ import { ventures } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Our venture ecosystem",
   description:
-    "Explore AUVERAI’s intended ecosystem of independent digital ventures, from specialist communities to AI-powered business software.",
+    "AUVERAI’s intended ecosystem spans independent digital ventures, from specialist communities to AI-powered business software.",
   alternates: { canonical: "/ventures/" },
 };
 
