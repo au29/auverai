@@ -85,6 +85,6 @@ export const faqs = [
   {
     question: "How can we start a conversation?",
     answer:
-      "We welcome project and partnership enquiries at contact@auverai.com. Our contact page prepares an email introduction with your goals, project details and area of interest.",
+      "We welcome project and partnership enquiries at info@auverai.com. Our contact page prepares an email introduction with your goals, project details and area of interest.",
   },
 ];

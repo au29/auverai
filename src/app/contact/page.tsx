@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "How we can help",
   description:
-    "AUVERAI helps businesses with business software, AI and automation. Project and partnership enquiries: contact@auverai.com.",
+    "AUVERAI helps businesses with business software, AI and automation. Project and partnership enquiries: info@auverai.com.",
   alternates: { canonical: "/contact/" },
 };
 

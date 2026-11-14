@@ -58,7 +58,7 @@ Next.js export documentation: https://nextjs.org/docs/app/guides/static-exports
 - `public/`: favicon, social image, Apple icon and Cloudflare response headers.
 - `DESIGN-SOURCES.md`: source blocks and adaptation details.
 
-Optional public environment settings are documented in `.env.example`. They are compiled into the static export. Set them before building. Defaults are `https://auverai.com` and `contact@auverai.com`.
+Optional public environment settings are documented in `.env.example`. They are compiled into the static export. Set them before building. Defaults are `https://auverai.com` and `info@auverai.com`.
 
 Company copy reflects AUVERAI Innovations L.L.C-FZ as a registered company in Meydan Free Zone, Dubai, UAE, based on the supplied business licence issued on 11 November 2026. The public site focuses on two service areas: Business Software and AI & Automation, supported by systems integration and business process consultancy. Service descriptions do not assert that a particular software product is already available. No customers, testimonials, financial performance or certifications were invented. The licence document and personal details are not published with the site.
 
@@ -68,7 +68,7 @@ The services page is `/services/`. Cloudflare redirects the former `/ventures/` 
 
 ## Contact behaviour
 
-The contact page validates an introduction locally, then prepares a `mailto:` draft addressed to `contact@auverai.com`. The visitor reviews and sends it in their email app. A copyable draft is available if no email app is configured. The website does not send email or store enquiries on a server. No analytics or advertising trackers are installed. If server-side lead capture is later added, update the privacy page and use an appropriate protected delivery endpoint.
+The contact page validates an introduction locally, then prepares a `mailto:` draft addressed to `info@auverai.com`. The visitor reviews and sends it in their email app. A copyable draft is available if no email app is configured. The website does not send email or store enquiries on a server. No analytics or advertising trackers are installed. If server-side lead capture is later added, update the privacy page and use an appropriate protected delivery endpoint.
 
 ## Checks
 

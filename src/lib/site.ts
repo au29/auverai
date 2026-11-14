@@ -7,6 +7,6 @@ export const site = {
   url:
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
     "https://auverai.com",
-  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "contact@auverai.com",
+  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "info@auverai.com",
   location: "Dubai, United Arab Emirates",
 };
