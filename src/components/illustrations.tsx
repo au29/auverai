@@ -62,7 +62,7 @@ export function CapabilityMap() {
         <div className="chip-pins pins-left" />
         <div className="chip-pins pins-right" />
         <div className="chip-face">
-          <BrandMark className="size-18 text-primary" />
+          <BrandMark className="size-16" />
         </div>
         <span>AUVERAI</span>
       </div>

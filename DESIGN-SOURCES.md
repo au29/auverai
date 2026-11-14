@@ -14,6 +14,8 @@ Source material was read through the user's authenticated Tailark Pro browser se
 | https://tailark.com/blocks/quartz/faqs — `faqs-1` | Split heading/accordion arrangement and elevated open states. Uses AUVERAI questions with shadcn/Base UI primitives. |
 | https://tailark.com/blocks/quartz/footer — `footer-1` | Brand column, grouped navigation and copyright structure. Removed example social links and added the confirmed contact address. |
 
-shadcn's Base Nova button, accordion and dialog were installed with the official shadcn CLI. Geist and Geist Mono are self-hosted by Next.js at build time. Icons, including the service-area illustrations, use Lucide. AUVERAI's geometric mark, capability map, interface artwork and social card were made for this implementation.
+shadcn's Base Nova button, accordion and dialog were installed with the official shadcn CLI. Geist and Geist Mono are self-hosted by Next.js at build time. Icons, including the service-area illustrations, use Lucide. The capability map, interface artwork and social card layout were made for this implementation.
+
+The AUVERAI logo comes from the user-supplied [Figma node 33:737](https://www.figma.com/design/saBDZRmxS0jevjI2dd5Igd/AUVERAI?node-id=33-737), supplied on 14 November 2026. `public/brand/auverai-logo.svg` is the unmodified complete logo export. The symbol uses the unmodified vector exports from nodes `33:738` and `33:746`, positioned with their original relative bounds from Figma in `src/lib/brand-assets.json`. The shared brand components preserve the artwork's black colour and proportions. Favicons and the social card are generated from those same SVG sources by `scripts/generate-brand-assets.mjs`.
 
 No stock photographs, invented endorsements, customer logo claims or external image hotlinks are used.

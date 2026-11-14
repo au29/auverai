@@ -44,7 +44,10 @@ export const metadata: Metadata = {
     description: site.description,
     images: ["/social-card.png"],
   },
-  icons: { icon: "/icon.svg", apple: "/apple-icon.png" },
+  icons: {
+    icon: { url: "/icon.png", type: "image/png", sizes: "64x64" },
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({

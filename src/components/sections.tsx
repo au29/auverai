@@ -405,7 +405,7 @@ export function ContactCTA() {
     <section className="px-6 py-20 sm:py-24">
       <div className="mx-auto max-w-5xl text-center">
         <div className="mx-auto mb-7 flex size-13 items-center justify-center rounded-2xl border bg-card shadow-sm">
-          <BrandMark className="size-8 text-primary" />
+          <BrandMark className="size-8" />
         </div>
         <Eyebrow>Technology shaped around your business</Eyebrow>
         <h2 className="mt-5 text-4xl leading-tight font-semibold tracking-[-.045em] sm:text-6xl">

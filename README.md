@@ -49,6 +49,8 @@ Next.js export documentation: https://nextjs.org/docs/app/guides/static-exports
 ## Content and brand
 
 - `src/lib/site.ts`: public domain, contact email and shared metadata.
+- `src/components/brand.tsx`: the shared Figma logo and symbol components.
+- `public/brand/` and `src/lib/brand-assets.json`: original logo SVGs and symbol geometry. Run `node scripts/generate-brand-assets.mjs` to regenerate the favicon, Apple icon and social card after updating the source artwork.
 - `src/lib/content.ts`: service descriptions, areas of work and FAQs.
 - `src/components/sections.tsx`: homepage content and layout.
 - `src/components/illustrations.tsx`: original AUVERAI interface illustrations.

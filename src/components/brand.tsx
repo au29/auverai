@@ -1,31 +1,45 @@
 import { cn } from "@/lib/utils";
+import { logo, symbol } from "@/lib/brand-assets.json";
 
 export function BrandMark({ className }: { className?: string }) {
   return (
-    <svg
+    <span
       aria-hidden="true"
-      viewBox="0 0 36 36"
-      fill="none"
-      className={cn("size-8", className)}
+      className={cn("brand-mark inline-flex size-8 shrink-0 items-center justify-center", className)}
     >
-      <path d="M3 29 14.4 7h7.2L10.2 29H3Z" fill="currentColor" />
-      <path d="m22.6 10 10.4 19h-7.6l-6.5-11.8L22.6 10Z" fill="currentColor" />
-      <path
-        d="M15.1 24h7.4l2.8 5h-13l2.8-5Z"
-        fill="currentColor"
-        opacity=".5"
-      />
-    </svg>
+      <span
+        className="relative block w-full"
+        style={{ aspectRatio: `${symbol.width} / ${symbol.height}` }}
+      >
+        {symbol.parts.map((part) => (
+          <img
+            key={part.nodeId}
+            src={part.src}
+            alt=""
+            width={Math.round(part.width)}
+            height={Math.round(part.height)}
+            className="absolute block max-w-none"
+            style={{
+              left: `${(part.x / symbol.width) * 100}%`,
+              top: `${(part.y / symbol.height) * 100}%`,
+              width: `${(part.width / symbol.width) * 100}%`,
+              height: "auto",
+            }}
+          />
+        ))}
+      </span>
+    </span>
   );
 }
 
 export function Brand({ className }: { className?: string }) {
   return (
-    <span className={cn("inline-flex items-center gap-2.5", className)}>
-      <BrandMark />
-      <span className="text-[19px] font-semibold tracking-[.06em]">
-        AUVERAI<span className="ml-0.5 text-primary">.</span>
-      </span>
-    </span>
+    <img
+      src={logo.src}
+      alt="AUVERAI"
+      width={Math.round(logo.width)}
+      height={Math.round(logo.height)}
+      className={cn("block h-auto w-[170px] shrink-0", className)}
+    />
   );
 }

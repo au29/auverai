@@ -463,7 +463,7 @@
   border-right: 1px solid #18181b08;
   color: #a1a1aa;
 }
-.mini-sidebar > span {
+.mini-sidebar > span:not(.brand-mark) {
   display: block;
   height: 3px;
   width: 13px;
@@ -615,10 +615,6 @@
 .about-mark {
   width: 210px;
   height: 210px;
-  color: #fff;
-  filter: drop-shadow(8px 12px 0 #d4d4da) drop-shadow(16px 20px 0 #c4c4cc)
-    drop-shadow(0 24px 20px #18181b15);
-  transform: rotate(-12deg);
 }
 
 @media (max-width: 767px) {
@@ -649,7 +645,7 @@
     height: 60px;
     border-radius: 10px;
   }
-  .chip-face svg {
+  .chip-face > .brand-mark {
     width: 46px;
     height: 46px;
   }

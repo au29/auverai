@@ -30,7 +30,7 @@ export default function AboutPage() {
       <section className="page-container">
         <div className="about-wide-art" aria-hidden="true">
           <div className="architecture-lines" />
-          <BrandMark className="size-36 text-zinc-300 sm:size-52" />
+          <BrandMark className="size-36 sm:size-52" />
           <div className="absolute inset-x-7 bottom-7 flex justify-between font-mono text-[10px] tracking-widest text-zinc-500">
             <span>PRACTICAL TECHNOLOGY</span>
             <span>DUBAI → WORLD</span>
