@@ -49,7 +49,7 @@ Next.js export documentation: https://nextjs.org/docs/app/guides/static-exports
 ## Content and brand
 
 - `src/lib/site.ts`: public domain, contact email and shared metadata.
-- `src/lib/content.ts`: venture descriptions and FAQs.
+- `src/lib/content.ts`: service descriptions, areas of work and FAQs.
 - `src/components/sections.tsx`: homepage content and layout.
 - `src/components/illustrations.tsx`: original AUVERAI interface illustrations.
 - `src/app/globals.css`: Tailark Quartz tokens, AUVERAI compositions and responsive rules.
@@ -58,9 +58,11 @@ Next.js export documentation: https://nextjs.org/docs/app/guides/static-exports
 
 Optional public environment settings are documented in `.env.example`. They are compiled into the static export. Set them before building. Defaults are `https://auverai.com` and `contact@auverai.com`.
 
-Company copy reflects AUVERAI Innovations L.L.C-FZ as a registered company in Meydan Free Zone, Dubai, UAE, based on the supplied business licence issued on 11 November 2026. The venture ecosystem remains prospective; company registration does not establish individual venture ownership or launch status. No customers, testimonials, financial performance or venture launch claims were invented. The licence document and personal details are not published with the site.
+Company copy reflects AUVERAI Innovations L.L.C-FZ as a registered company in Meydan Free Zone, Dubai, UAE, based on the supplied business licence issued on 11 November 2026. The public site focuses on two service areas: Business Software and AI & Automation, supported by systems integration and business process consultancy. Service descriptions do not assert that a particular software product is already available. No customers, testimonials, financial performance or certifications were invented. The licence document and personal details are not published with the site.
 
 Marketing copy uses AUVERAI's own voice to explain what we do, how we work and how we help businesses. Describe our approach and values as statements about the company, rather than instructions to the reader. Buttons and form controls should still clearly describe their actions.
+
+The services page is `/services/`. Cloudflare redirects the former `/ventures/` URLs to it using `public/_redirects`; the old page is no longer exported or included in the sitemap.
 
 ## Contact behaviour
 

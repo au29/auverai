@@ -21,8 +21,8 @@ export default function PrivacyPage() {
           </h2>
           <p>
             This website is operated by {site.legalName}, a company registered
-            in Meydan Free Zone, Dubai, UAE. It introduces our capabilities and
-            venture concepts. It does not require an account. We have not added
+            in Meydan Free Zone, Dubai, UAE. It introduces our business software,
+            AI and automation services. It does not require an account. We have not added
             advertising trackers or analytics cookies to this website.
           </p>
         </section>

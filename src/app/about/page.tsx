@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About AUVERAI",
   description:
-    "AUVERAI Innovations is a technology and venture-building company registered in Meydan Free Zone, Dubai, UAE.",
+    "AUVERAI Innovations is a software and business technology company registered in Meydan Free Zone, Dubai, UAE, focused on business software, AI and automation.",
   alternates: { canonical: "/about/" },
 };
 
@@ -18,13 +18,13 @@ export default function AboutPage() {
       <section className="page-container pt-18 pb-16 sm:pt-24">
         <Eyebrow>Technology with a purpose</Eyebrow>
         <h1 className="page-title mt-6">
-          Ideas are a beginning.
+          Technology for business.
           <br />
-          We’re here for the building.
+          Built around people.
         </h1>
         <p className="mt-7 max-w-2xl text-lg leading-8 text-muted-foreground">
-          AUVERAI Innovations brings technology, intelligence and practical
-          business thinking together to turn possibility into something real.
+          We develop business software and help organisations use AI and
+          automation to improve everyday operations.
         </p>
       </section>
       <section className="page-container">
@@ -32,7 +32,7 @@ export default function AboutPage() {
           <div className="architecture-lines" />
           <BrandMark className="size-36 text-zinc-300 sm:size-52" />
           <div className="absolute inset-x-7 bottom-7 flex justify-between font-mono text-[10px] tracking-widest text-zinc-500">
-            <span>INDEPENDENT THINKING</span>
+            <span>PRACTICAL TECHNOLOGY</span>
             <span>DUBAI → WORLD</span>
           </div>
         </div>
@@ -48,20 +48,20 @@ export default function AboutPage() {
         </div>
         <div className="space-y-5 text-base leading-8 text-muted-foreground">
           <p>
-            {site.legalName} is a technology and venture-building company
-            registered in Meydan Free Zone, Dubai, UAE. We create, develop and
-            grow digital products, technology platforms and independent
-            businesses.
+            {site.legalName} is a software and business technology company
+            registered in Meydan Free Zone, Dubai, UAE. Our work centres on
+            business applications, software publishing, AI, automation and
+            process consultancy.
           </p>
           <p>
-            We believe useful innovation happens where disciplines meet. Product
-            strategy informs design. Engineering makes ideas work. AI opens up
-            new ways to operate. Business thinking gives it all a direction.
+            We bring business understanding and technical delivery together.
+            That means considering how people work, where information is needed
+            and how software can make everyday tasks clearer and more efficient.
           </p>
           <p>
-            We develop our own ventures and support other businesses through
-            dedicated technology and AI services. This combination
-            gives us room to follow worthwhile problems across industries.
+            Our two main service areas are Business Software and AI & Automation.
+            We support businesses from initial planning through development,
+            integration and ongoing improvement.
           </p>
         </div>
       </section>
@@ -78,7 +78,7 @@ export default function AboutPage() {
               {
                 icon: Layers3,
                 title: "Care beyond delivery.",
-                text: "We take a long-term view of the products and brands we develop, with attention to maintainability, usability and room to grow.",
+                text: "We take a long-term view of the software and systems we develop, with attention to maintainability, usability and room to grow.",
               },
               {
                 icon: Globe2,
@@ -103,25 +103,25 @@ export default function AboutPage() {
         <div>
           <Eyebrow>Our ambition</Eyebrow>
           <h2 className="section-title mt-5">
-            An ecosystem of ideas.
+            Useful technology.
             <br />A lasting contribution.
           </h2>
         </div>
         <div>
           <p className="text-lg leading-8 text-muted-foreground">
-            Our vision is to build a global ecosystem of intelligent products
-            and technology-driven businesses that create meaningful value for
-            people and organisations.
+            Our ambition is to help businesses make technology a useful part of
+            everyday work: clearer information, more connected systems and less
+            time spent on repetitive tasks.
           </p>
           <p className="mt-5 text-sm leading-7 text-muted-foreground">
-            We pursue that vision one useful product, one thoughtful partnership and
-            one well-built venture at a time.
+            We pursue that ambition through practical software, thoughtful
+            implementation and lasting working relationships.
           </p>
           <Link
-            href="/ventures/"
+            href="/services/"
             className="mt-7 inline-flex items-center gap-3 text-sm font-medium hover:text-primary"
           >
-            Explore our venture concepts <ArrowUpRight className="size-4" />
+            Explore our services <ArrowUpRight className="size-4" />
           </Link>
         </div>
       </section>

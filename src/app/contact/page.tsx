@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "How we can help",
   description:
-    "AUVERAI helps businesses with digital products, AI and software engineering. Project and partnership enquiries: contact@auverai.com.",
+    "AUVERAI helps businesses with business software, AI and automation. Project and partnership enquiries: contact@auverai.com.",
   alternates: { canonical: "/contact/" },
 };
 
@@ -27,8 +27,8 @@ export default function ContactPage() {
           <span className="text-primary">forward.</span>
         </h1>
         <p className="mt-6 max-w-sm text-base leading-7 text-muted-foreground">
-          We help businesses develop digital products, apply AI and solve
-          technology challenges. We welcome project and partnership enquiries.
+          We help businesses develop software, apply AI and automate workflows.
+          We welcome project and partnership enquiries.
         </p>
         <div className="mt-12 space-y-6">
           <div className="flex gap-4">

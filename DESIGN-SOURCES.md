@@ -14,6 +14,6 @@ Source material was read through the user's authenticated Tailark Pro browser se
 | https://tailark.com/blocks/quartz/faqs — `faqs-1` | Split heading/accordion arrangement and elevated open states. Uses AUVERAI questions with shadcn/Base UI primitives. |
 | https://tailark.com/blocks/quartz/footer — `footer-1` | Brand column, grouped navigation and copyright structure. Removed example social links and added the confirmed contact address. |
 
-shadcn's Base Nova button, accordion and dialog were installed with the official shadcn CLI. Geist and Geist Mono are self-hosted by Next.js at build time. Icons use Lucide. AUVERAI's geometric mark, venture initials, capability map, interface artwork and social card were made for this implementation.
+shadcn's Base Nova button, accordion and dialog were installed with the official shadcn CLI. Geist and Geist Mono are self-hosted by Next.js at build time. Icons, including the service-area illustrations, use Lucide. AUVERAI's geometric mark, capability map, interface artwork and social card were made for this implementation.
 
-No stock photographs, invented endorsements, customer logo claims or external image hotlinks are used. The venture initials are presentation marks, not claims to reproduce the ventures' official logos.
+No stock photographs, invented endorsements, customer logo claims or external image hotlinks are used.

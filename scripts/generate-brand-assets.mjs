@@ -11,7 +11,7 @@ const social = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630
 <g font-family="Arial, Helvetica, sans-serif"><text x="132" y="100" font-size="25" letter-spacing="3" font-weight="600" fill="#18181b">AUVERAI<tspan fill="#6366f1">.</tspan></text>
 <text x="80" y="264" font-size="72" letter-spacing="-3" font-weight="600" fill="#18181b">Building</text>
 <text x="80" y="349" font-size="72" letter-spacing="-3" font-weight="600" fill="#6366f1">what’s next.</text>
-<text x="82" y="416" font-size="23" fill="#71717a">Intelligent products. Independent ventures.</text>
+<text x="82" y="416" font-size="23" fill="#71717a">Business software. AI &amp; automation.</text>
 <text x="82" y="550" font-size="15" letter-spacing="1" fill="#71717a">TECHNOLOGY. INTELLIGENCE. INNOVATION.</text></g>
 <rect x="850" y="219" width="210" height="210" rx="35" fill="#fff" stroke="#e4e4e7"/>
 <g transform="translate(873 242) scale(4.55)" fill="#6366f1">${mark}</g>

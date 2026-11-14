@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import {
   Hero,
   Capabilities,
-  Ecosystem,
+  ServiceAreas,
   Approach,
   AboutPreview,
   ContactCTA,
@@ -16,7 +16,7 @@ export default function HomePage() {
     <main id="main">
       <Hero />
       <Capabilities />
-      <Ecosystem />
+      <ServiceAreas />
       <Approach />
       <AboutPreview />
       <FAQ />

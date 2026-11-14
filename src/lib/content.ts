@@ -1,70 +1,86 @@
-export const ventures = [
+export const services = [
   {
-    id: "propian",
-    name: "Propian",
-    category: "Community & connection",
-    initials: "P",
-    color: "blue",
-    description:
-      "A place for proprietary traders and trading firms to connect.",
-    detail:
-      "A social and community platform concept built around the people, knowledge and conversations within proprietary trading. The ambition is to bring a specialist community together in one dedicated space.",
-    focus: [
-      "Specialist communities",
-      "Professional connections",
-      "Knowledge sharing",
-    ],
-  },
-  {
-    id: "omnizh",
-    name: "Omnizh",
-    category: "Intelligent business software",
-    initials: "O",
+    id: "business-software",
+    name: "Business Software",
+    category: "Applications & software publishing",
     color: "violet",
     description:
-      "An AI-powered ecosystem for a more connected way to run a business.",
+      "We develop software around the way businesses work.",
+    summary:
+      "Business applications that bring information, teams and everyday workflows together.",
     detail:
-      "Omnizh is envisioned as a business management ecosystem that brings multiple enterprise functions together. Its direction combines integrated software with AI to reduce fragmentation in everyday operations.",
-    focus: [
-      "Connected business functions",
-      "Enterprise workflows",
-      "AI-powered operations",
+      "Our software work focuses on practical tools for managing customer relationships, internal operations and reporting. We help businesses plan, develop and improve applications around their needs, with clear interfaces and connected information.",
+    focus: ["Business applications", "Workflow management", "Dashboards & reporting"],
+    areas: [
+      {
+        name: "Application development",
+        description:
+          "We design and develop web applications and business tools around specific operational needs.",
+      },
+      {
+        name: "Software publishing",
+        description:
+          "We develop and publish business software, with a focus on usability, maintenance and ongoing improvement.",
+      },
+      {
+        name: "Connected information",
+        description:
+          "We help bring business data into useful dashboards and workflows so teams can access the information they need.",
+      },
     ],
   },
   {
-    id: "ai-agency",
-    name: "AI Agency",
-    category: "Applied AI & automation",
-    initials: "AI",
+    id: "ai-automation",
+    name: "AI & Automation",
+    category: "Applied AI & process improvement",
     color: "amber",
     description:
-      "A dedicated services brand to help businesses put AI to work.",
+      "We help businesses put practical AI and automation to work.",
+    summary:
+      "AI-assisted tools and connected workflows that reduce repetitive tasks and support everyday operations.",
     detail:
-      "An intended agency brand for external businesses exploring AI, automation and custom technology. The scope includes identifying useful opportunities, implementing systems and improving workflows over time.",
-    focus: ["AI implementation", "Workflow automation", "Custom technology"],
+      "We help businesses identify useful AI applications, automate routine processes and connect the tools they already use. Our approach starts with a clear business need and combines implementation with process consultancy and appropriate human oversight.",
+    focus: ["AI-assisted workflows", "Process automation", "Systems integration"],
+    areas: [
+      {
+        name: "Applied AI",
+        description:
+          "We help businesses introduce AI-assisted tools for tasks such as handling information, preparing content and supporting internal workflows.",
+      },
+      {
+        name: "Workflow automation",
+        description:
+          "We connect applications and automate repeatable steps to reduce manual handoffs and duplicated work.",
+      },
+      {
+        name: "Process consultancy",
+        description:
+          "We review existing workflows, identify practical improvements and help businesses plan how technology can support them.",
+      },
+    ],
   },
 ] as const;
 
 export const faqs = [
   {
-    question: "What is AUVERAI Innovations?",
+    question: "What does AUVERAI do?",
     answer:
-      "AUVERAI is a technology and venture-building company registered in Meydan Free Zone, Dubai. We bring together product development, artificial intelligence, software engineering and business strategy to turn ideas into useful digital businesses.",
+      "AUVERAI is a software and business technology company registered in Meydan Free Zone, Dubai. We develop business applications and help companies use AI, automation and process consultancy to improve everyday operations.",
   },
   {
-    question: "Do you build your own products or work with clients?",
+    question: "What services do you offer?",
     answer:
-      "Both. We develop our own digital products and ventures, and help other businesses with AI, automation and technology projects.",
+      "Our two main service areas are Business Software and AI & Automation. They cover application development, software publishing, AI-assisted workflows, systems integration and business process improvement.",
   },
   {
-    question: "Are all the ventures shown already launched?",
+    question: "Can you work with our existing tools?",
     answer:
-      "The ventures shown represent AUVERAI’s intended product ecosystem. Inclusion does not mean that each venture is already operational or legally owned by AUVERAI. Launch and ownership details will be shared as they are confirmed.",
+      "Yes. We help businesses assess their existing applications, identify integration opportunities and design workflows that connect their tools and information. The approach depends on the systems in use and the needs of the project.",
   },
   {
-    question: "What kinds of projects are a good fit?",
+    question: "How do you define a project’s scope?",
     answer:
-      "We focus on digital products, SaaS platforms, AI-powered workflows, business software and platform modernisation. We help businesses assess the opportunity and identify an approach that fits their goals.",
+      "We begin by understanding the business goals, current processes and technical requirements. We then agree on the proposed approach, deliverables and scope before implementation begins.",
   },
   {
     question: "How can we start a conversation?",

@@ -13,17 +13,17 @@ export function Footer() {
               <Brand />
             </Link>
             <p className="mt-5 max-w-60 text-sm leading-6 text-muted-foreground">
-              Intelligent products.
+              Business software.
               <br />
-              Independent ventures.
-              <br />A world of possibility.
+              Practical automation.
+              <br />Better ways of working.
             </p>
           </div>
           <div>
             <p className="footer-label">Explore</p>
             <div className="footer-links">
               <Link href="/#capabilities">Capabilities</Link>
-              <Link href="/ventures/">Our ventures</Link>
+              <Link href="/services/">Our services</Link>
               <Link href="/#approach">Our approach</Link>
             </div>
           </div>

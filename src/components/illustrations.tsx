@@ -13,12 +13,12 @@ import {
 } from "lucide-react";
 import { BrandMark } from "@/components/brand";
 
-export function VentureMap() {
+export function CapabilityMap() {
   return (
     <div
-      className="venture-map"
+      className="capability-map"
       role="img"
-      aria-label="AUVERAI connects venture building, artificial intelligence, engineering and business strategy."
+      aria-label="AUVERAI connects business software, AI and automation, systems integration and process consultancy."
     >
       <div className="map-grid" />
       <div className="map-orbit orbit-one" />
@@ -66,14 +66,14 @@ export function VentureMap() {
         </div>
         <span>AUVERAI</span>
       </div>
-      <div className="map-node node-venture">
+      <div className="map-node node-software">
         <span className="node-icon">
           <Layers3 />
         </span>
         <div>
           <span className="node-overline">01 / CREATE</span>
-          <strong>Venture building</strong>
-          <p>From possibility to product</p>
+          <strong>Business software</strong>
+          <p>Tools for everyday operations</p>
         </div>
         <span className="node-status" />
       </div>
@@ -83,8 +83,8 @@ export function VentureMap() {
         </span>
         <div>
           <span className="node-overline">02 / CONNECT</span>
-          <strong>Applied intelligence</strong>
-          <p>Technology that works smarter</p>
+          <strong>AI & automation</strong>
+          <p>Practical support for your work</p>
         </div>
         <span className="node-status" />
       </div>
@@ -94,8 +94,8 @@ export function VentureMap() {
         </span>
         <div>
           <span className="node-overline">03 / BUILD</span>
-          <strong>Software engineering</strong>
-          <p>Made for the real world</p>
+          <strong>Systems integration</strong>
+          <p>Connected tools and information</p>
         </div>
         <span className="node-status" />
       </div>
@@ -105,8 +105,8 @@ export function VentureMap() {
         </span>
         <div>
           <span className="node-overline">04 / EVOLVE</span>
-          <strong>Digital innovation</strong>
-          <p>Better ways of doing business</p>
+          <strong>Process consultancy</strong>
+          <p>Better ways of working</p>
         </div>
         <span className="node-status" />
       </div>
@@ -143,13 +143,13 @@ export function ProductIllustration() {
               <span className="rounded bg-indigo-50 p-1.5 text-indigo-500">
                 <Layers3 className="size-3.5" />
               </span>{" "}
-              Your next venture{" "}
+              Business workspace{" "}
               <span className="ml-auto rounded-full border px-2 py-1 text-[9px] text-zinc-500">
-                Product roadmap
+                Work overview
               </span>
             </div>
             <div className="grid grid-cols-3 gap-2">
-              {["Discover", "Build", "Launch"].map((t, i) => (
+              {["People", "Projects", "Reports"].map((t, i) => (
                 <div key={t} className="rounded-md bg-zinc-50 p-2.5">
                   <div className="mb-3 flex items-center gap-1.5 text-[10px] text-zinc-500">
                     <span
@@ -165,13 +165,13 @@ export function ProductIllustration() {
                     <span />
                     <span />
                     <small>
-                      {["Opportunity", "Prototype", "Go to market"][i]}
+                      {["Customers", "Tasks", "Operations"][i]}
                     </small>
                   </div>
                   <div className="mini-task mt-2">
                     <span />
                     <small>
-                      {["Research", "Experience", "Learn & improve"][i]}
+                      {["Contacts", "Progress", "Insights"][i]}
                     </small>
                   </div>
                 </div>
@@ -194,7 +194,7 @@ export function WorkflowIllustration() {
         </span>
         <div>
           <span className="text-[10px] text-zinc-500">TRIGGER</span>
-          <p className="text-xs font-medium">A new opportunity</p>
+          <p className="text-xs font-medium">A new business request</p>
         </div>
         <Check className="ml-auto size-3 text-zinc-400" />
       </div>
@@ -204,7 +204,7 @@ export function WorkflowIllustration() {
         </span>
         <div>
           <span className="text-[10px] text-zinc-500">INTELLIGENCE</span>
-          <p className="text-xs font-medium">Understand. Decide. Act.</p>
+          <p className="text-xs font-medium">Review. Organise. Assist.</p>
         </div>
         <span className="ml-auto size-1.5 rounded-full bg-indigo-400" />
       </div>
@@ -213,7 +213,7 @@ export function WorkflowIllustration() {
           <Check className="size-3 text-emerald-600" /> Less busywork
         </div>
         <div className="flow-result">
-          <ArrowRight className="size-3 text-primary" /> More possibility
+          <ArrowRight className="size-3 text-primary" /> Connected workflows
         </div>
       </div>
     </div>
@@ -269,7 +269,7 @@ export function StrategyIllustration() {
     <div className="strategy-illustration" aria-hidden="true">
       <div className="strategy-card strategy-back">
         <ScanLine className="size-5 text-zinc-400" />
-        <span>See the opportunity</span>
+        <span>Understanding the workflow</span>
       </div>
       <div className="strategy-card strategy-front">
         <span className="mb-4 inline-flex rounded-lg border bg-white p-2 shadow-xs">

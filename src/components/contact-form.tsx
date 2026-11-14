@@ -86,7 +86,7 @@ export function ContactForm() {
             className="contact-input"
             name="company"
             id="company"
-            placeholder="Your company or venture"
+            placeholder="Your company"
             autoComplete="organization"
             maxLength={150}
           />
@@ -99,12 +99,12 @@ export function ContactForm() {
             className="contact-input"
             id="interest"
             name="interest"
-            defaultValue="A new venture or product"
+            defaultValue="Business Software"
           >
-            <option>A new venture or product</option>
-            <option>AI & automation</option>
-            <option>Software & platform engineering</option>
-            <option>Product strategy & digital innovation</option>
+            <option>Business Software</option>
+            <option>AI & Automation</option>
+            <option>Systems integration</option>
+            <option>Business process consultancy</option>
             <option>A partnership</option>
             <option>Something else</option>
           </select>

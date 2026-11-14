@@ -11,13 +11,13 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
-  VentureMap,
+  CapabilityMap,
   ProductIllustration,
   WorkflowIllustration,
   EngineeringIllustration,
   StrategyIllustration,
 } from "@/components/illustrations";
-import { ventures } from "@/lib/content";
+import { services } from "@/lib/content";
 import { BrandMark } from "@/components/brand";
 
 export function Eyebrow({
@@ -49,16 +49,16 @@ export function Hero() {
           Building <span className="text-primary">what’s next.</span>
         </h1>
         <p className="mx-auto mt-6 max-w-xl text-base leading-7 text-balance text-muted-foreground sm:text-lg">
-          We turn ambitious ideas into intelligent products
-          <br className="hidden sm:block" /> and technology-driven businesses.
+          We build business software and AI solutions
+          <br className="hidden sm:block" /> that help companies work more effectively.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <Button
             className="h-11 gap-5 px-5 shadow-sm"
             nativeButton={false}
             render={
-              <Link href="/ventures/">
-                Explore our ventures <ArrowUpRight className="size-4" />
+              <Link href="/services/">
+                Explore our services <ArrowUpRight className="size-4" />
               </Link>
             }
           />
@@ -75,7 +75,7 @@ export function Hero() {
         </div>
       </div>
       <div className="mx-auto mt-9 max-w-6xl px-4 sm:mt-6">
-        <VentureMap />
+        <CapabilityMap />
       </div>
       <div className="mx-auto mt-1 flex max-w-6xl items-center justify-between gap-3 border-t px-6 pt-7 text-[11px] tracking-wide text-muted-foreground">
         <span className="flex items-center gap-2">
@@ -98,10 +98,10 @@ const capabilities = [
   {
     icon: Layers3,
     number: "01",
-    title: "We build digital ventures.",
+    title: "We develop business software.",
     description:
-      "We bring product strategy, design and engineering together to develop focused digital products and independent businesses.",
-    tags: ["Venture building", "SaaS & digital products"],
+      "We design, develop and publish business applications that help teams manage information, coordinate work and improve everyday operations.",
+    tags: ["Business applications", "Software publishing"],
     Illustration: ProductIllustration,
   },
   {
@@ -116,19 +116,19 @@ const capabilities = [
   {
     icon: Code2,
     number: "03",
-    title: "We engineer reliable software.",
+    title: "We connect business systems.",
     description:
-      "We design and build interfaces, software and infrastructure that help businesses deliver dependable digital experiences.",
-    tags: ["Software engineering", "Platforms & infrastructure"],
+      "We help businesses connect their applications and data so teams can work across tools with fewer manual steps.",
+    tags: ["Systems integration", "Connected data"],
     Illustration: EngineeringIllustration,
   },
   {
     icon: Compass,
     number: "04",
-    title: "We shape product direction.",
+    title: "We improve business processes.",
     description:
-      "We help businesses clarify their product direction, identify useful opportunities and connect technology decisions with commercial goals.",
-    tags: ["Product strategy", "Digital innovation"],
+      "We help businesses review their workflows, plan technology improvements and turn operational challenges into practical software and automation projects.",
+    tags: ["Process consultancy", "Technology planning"],
     Illustration: StrategyIllustration,
   },
 ];
@@ -148,8 +148,8 @@ export function Capabilities() {
             </h2>
           </div>
           <p className="section-description">
-            The capabilities behind our ventures—and the technology services
-            we offer to help other businesses build what comes next.
+            We bring software, AI and process expertise together to help
+            businesses work more effectively and make better use of technology.
           </p>
         </div>
         <div className="capability-grid relative mt-12 grid overflow-hidden rounded-2xl border border-transparent bg-card/50 shadow-md shadow-black/5 ring-1 ring-border md:grid-cols-2">
@@ -202,81 +202,79 @@ export function Capabilities() {
   );
 }
 
-export function VentureIcon({
-  name,
+export function ServiceIcon({
+  id,
   color,
   large = false,
 }: {
-  name: string;
+  id: string;
   color: string;
   large?: boolean;
 }) {
+  const Icon = id === "business-software" ? Layers3 : Workflow;
   return (
     <span
-      className={`venture-icon venture-${color} ${large ? "venture-icon-large" : ""}`}
+      className={`service-icon service-${color} ${large ? "service-icon-large" : ""}`}
+      aria-hidden="true"
     >
-      {name}
+      <Icon className={large ? "size-10" : "size-5"} />
     </span>
   );
 }
 
-export function Ecosystem() {
+export function ServiceAreas() {
   return (
     <section
-      id="ventures"
+      id="services"
       className="dark relative overflow-hidden bg-background py-22 text-foreground sm:py-28"
     >
       <div className="page-container relative z-10">
         <div className="section-heading">
           <div>
-            <Eyebrow light>The venture ecosystem</Eyebrow>
+            <Eyebrow light>Our service areas</Eyebrow>
             <h2 className="section-title mt-5">
-              Independent ideas.
+              Software that connects.
               <br />
-              Connected by AUVERAI.
+              Automation that helps.
             </h2>
           </div>
           <p className="section-description">
-            A vision for a family of focused digital businesses. Each with its
-            own identity. Each built around a real opportunity.
+            Two areas of focus, shaped around real business needs. We help
+            companies organise their work, connect their tools and put
+            technology to practical use.
           </p>
         </div>
-        <div className="mt-12 grid gap-4 md:grid-cols-3">
-          {ventures.map((v) => (
+        <div className="mt-12 grid gap-4 md:grid-cols-2">
+          {services.map((service) => (
             <Link
-              href={`/ventures/#${v.id}`}
-              key={v.id}
+              href={`/services/#${service.id}`}
+              key={service.id}
               className="group rounded-xl border bg-card p-6 transition-colors hover:border-white/20 hover:bg-zinc-900"
             >
               <div className="flex items-center justify-between">
-                <VentureIcon name={v.initials} color={v.color} />
+                <ServiceIcon id={service.id} color={service.color} />
                 <ArrowUpRight className="size-4 text-zinc-500 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-white" />
               </div>
               <p className="mt-9 text-[10px] tracking-[.12em] text-zinc-400 uppercase">
-                {v.category}
+                {service.category}
               </p>
               <h3 className="mt-2 text-2xl font-semibold tracking-tight">
-                {v.name}
+                {service.name}
               </h3>
               <p className="mt-3 text-sm leading-6 text-zinc-400">
-                {v.description}
+                {service.summary}
               </p>
             </Link>
           ))}
         </div>
         <div className="mt-5 flex justify-end border-b border-white/10 pb-7">
           <Link
-            href="/ventures/"
+            href="/services/"
             className="flex items-center gap-3 text-sm text-zinc-200 hover:text-white"
           >
-            Explore the ecosystem <ArrowRight className="size-4" />
+            Explore our services <ArrowRight className="size-4" />
           </Link>
         </div>
-        <p className="mt-5 max-w-2xl text-xs leading-5 text-zinc-400">
-          These ventures form our intended ecosystem. Their inclusion does not
-          imply that every venture is already operational or legally owned by
-          AUVERAI.
-        </p>
       </div>
     </section>
   );
@@ -287,23 +285,23 @@ export function Approach() {
   const steps = [
     {
       number: "01",
-      title: "We find the right problem.",
-      body: "We work with businesses to understand their goals, the needs of their users and the opportunities where technology can make a difference.",
+      title: "We understand the work.",
+      body: "We work with businesses to understand their goals, existing tools and day-to-day processes before shaping a software or automation solution.",
       labels: ["Research", "Discovery", "Strategy"],
       icon: Compass,
     },
     {
       number: "02",
-      title: "We turn ideas into products.",
-      body: "We combine strategy, design and engineering to develop useful products, test assumptions and turn a clear direction into working software.",
+      title: "We develop the solution.",
+      body: "We combine software design, engineering and AI integration to build, configure and test solutions around the way a business operates.",
       labels: ["Design", "Engineering", "Validation"],
       icon: Code2,
     },
     {
       number: "03",
-      title: "We support lasting growth.",
-      body: "We help businesses prepare for launch, learn from real use and improve their products as customer needs and ambitions evolve.",
-      labels: ["Launch", "Learning", "Improvement"],
+      title: "We support the next step.",
+      body: "We help businesses introduce new tools, refine workflows and improve their solutions as operational needs evolve.",
+      labels: ["Rollout", "Support", "Improvement"],
       icon: Layers3,
     },
   ];
@@ -321,8 +319,8 @@ export function Approach() {
           </div>
           <p className="section-description">
             Our approach connects business goals with practical delivery. We
-            support each stage, from understanding an opportunity to developing
-            and improving the product.
+            support each stage, from understanding an operational need to
+            developing and improving the solution.
           </p>
         </div>
         <div className="mt-14 grid gap-10 md:grid-cols-3 md:gap-8">
@@ -380,14 +378,14 @@ export function AboutPreview() {
               Open to possibility.
             </h2>
             <p className="mt-5 text-sm leading-6 text-muted-foreground">
-              AUVERAI is a technology and venture-building company registered
+              AUVERAI is a software and business technology company registered
               in Meydan Free Zone, Dubai. We believe the best way to shape the
               future is to build something useful.
             </p>
             <p className="mt-4 text-sm leading-6 text-muted-foreground">
-              We bring together technology, creativity and practical
-              business thinking to develop ventures that can grow beyond a
-              single industry.
+              We help businesses develop useful applications, apply AI and
+              automate workflows, with practical support from planning through
+              implementation.
             </p>
             <Link
               className="mt-8 inline-flex items-center gap-4 text-sm font-medium hover:text-primary"
@@ -409,7 +407,7 @@ export function ContactCTA() {
         <div className="mx-auto mb-7 flex size-13 items-center justify-center rounded-2xl border bg-card shadow-sm">
           <BrandMark className="size-8 text-primary" />
         </div>
-        <Eyebrow>Every venture starts with a conversation</Eyebrow>
+        <Eyebrow>Technology shaped around your business</Eyebrow>
         <h2 className="mt-5 text-4xl leading-tight font-semibold tracking-[-.045em] sm:text-6xl">
           What could we build together?
         </h2>

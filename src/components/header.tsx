@@ -18,7 +18,7 @@ import {
 
 const links = [
   { label: "Capabilities", href: "/#capabilities" },
-  { label: "Ventures", href: "/ventures/" },
+  { label: "Services", href: "/services/" },
   { label: "Our approach", href: "/#approach" },
   { label: "Company", href: "/about/" },
 ];
