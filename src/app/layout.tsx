@@ -45,8 +45,8 @@ export const metadata: Metadata = {
     images: ["/social-card.png"],
   },
   icons: {
-    icon: { url: "/icon.png", type: "image/png", sizes: "64x64" },
-    apple: "/apple-icon.png",
+    icon: { url: "/favicon.png", type: "image/png", sizes: "64x64" },
+    apple: "/apple-touch-icon.png",
   },
 };
 

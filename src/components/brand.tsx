@@ -5,29 +5,15 @@ export function BrandMark({ className }: { className?: string }) {
   return (
     <span
       aria-hidden="true"
-      className={cn("brand-mark inline-flex size-8 shrink-0 items-center justify-center", className)}
+      className={cn("brand-mark relative inline-flex size-8 shrink-0 items-center justify-center", className)}
     >
-      <span
-        className="relative block w-full"
-        style={{ aspectRatio: `${symbol.width} / ${symbol.height}` }}
-      >
-        {symbol.parts.map((part) => (
-          <img
-            key={part.nodeId}
-            src={part.src}
-            alt=""
-            width={Math.round(part.width)}
-            height={Math.round(part.height)}
-            className="absolute block max-w-none"
-            style={{
-              left: `${(part.x / symbol.width) * 100}%`,
-              top: `${(part.y / symbol.height) * 100}%`,
-              width: `${(part.width / symbol.width) * 100}%`,
-              height: "auto",
-            }}
-          />
-        ))}
-      </span>
+      <img
+        src={symbol.src}
+        alt=""
+        width={Math.round(symbol.width)}
+        height={Math.round(symbol.height)}
+        className="block h-auto w-full"
+      />
     </span>
   );
 }

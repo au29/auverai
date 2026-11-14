@@ -1,52 +1,20 @@
 import sharp from "sharp";
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 
 const { logo, symbol } = JSON.parse(
   await readFile("src/lib/brand-assets.json", "utf8"),
 );
 
-// Match the symbol to the wordmark's cap height without changing either shape.
-const sourceLogo = await readFile(`public${logo.source}`, "utf8");
-const sourcePaths = [...sourceLogo.matchAll(/<path\b[^>]*\/>/g)].map(([path]) => path);
-if (sourcePaths.length !== 9) {
-  throw new Error("Expected the nine vector layers from the supplied Figma logo");
-}
-const symbolPaths = sourcePaths.filter((path) => /id="Vector(?:_9)?"/.test(path));
-const wordmarkPaths = sourcePaths.filter((path) => !symbolPaths.includes(path));
-if (symbolPaths.length !== 2 || wordmarkPaths.length !== 7) {
-  throw new Error("The source logo layers no longer match the Figma geometry");
-}
-const symbolScale = logo.wordmark.height / symbol.height;
-const wordmarkOffset = symbol.width * symbolScale + logo.gap - logo.wordmark.x;
-await writeFile(
-  `public${logo.src}`,
-  `<svg xmlns="http://www.w3.org/2000/svg" width="${logo.width}" height="${logo.height}" viewBox="0 0 ${logo.width} ${logo.height}" fill="none">
-<g transform="scale(${symbolScale})">${symbolPaths.join("")}</g>
-<g transform="translate(${wordmarkOffset} ${-logo.wordmark.y})">${wordmarkPaths.join("")}</g>
-</svg>
-`,
-);
-
-// Reuse the original Figma SVGs and their relative bounds; never redraw the mark.
+// Scale each complete Figma export proportionally without changing its artwork.
 async function renderSymbol(size, padding, background = "transparent") {
-  const scale = (size - padding * 2) / symbol.width;
-  const top = (size - symbol.height * scale) / 2;
-  const layers = await Promise.all(
-    symbol.parts.map(async (part) => ({
-      input: await sharp(`public${part.src}`, { density: 600 })
-        .resize({ width: Math.round(part.width * scale) })
-        .png()
-        .toBuffer(),
-      left: Math.round(padding + part.x * scale),
-      top: Math.round(top + part.y * scale),
-    })),
-  );
-  return sharp({
-    create: { width: size, height: size, channels: 4, background },
-  })
-    .composite(layers)
-    .png()
-    .toBuffer();
+  const output = sharp(`public${symbol.src}`, { density: 600 })
+    .resize(size - padding * 2, size - padding * 2, {
+      fit: "contain",
+      background,
+    })
+    .extend({ top: padding, bottom: padding, left: padding, right: padding, background });
+  if (background !== "transparent") output.flatten({ background });
+  return output.png().toBuffer();
 }
 
 const social = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
@@ -64,16 +32,16 @@ await sharp(Buffer.from(social))
   .composite([
     {
       input: await sharp(`public${logo.src}`)
-        .resize({ width: Math.round((250 * logo.width) / logo.sourceWidth) })
+        .resize({ width: 230 })
         .png()
         .toBuffer(),
       left: 80,
-      top: Math.round(65 + (logo.wordmark.y * 250) / logo.sourceWidth),
+      top: 70,
     },
     { input: await renderSymbol(164, 8), left: 873, top: 242 },
   ])
   .png()
   .toFile("public/social-card.png");
-await sharp(await renderSymbol(64, 7, "white")).toFile("public/icon.png");
-await sharp(await renderSymbol(180, 25, "white")).toFile("public/apple-icon.png");
-console.log("Generated the compact logo, social-card.png, icon.png and apple-icon.png");
+await sharp(await renderSymbol(64, 7, "white")).toFile("public/favicon.png");
+await sharp(await renderSymbol(180, 25, "white")).toFile("public/apple-touch-icon.png");
+console.log("Generated social-card.png, favicon.png and apple-touch-icon.png from the Figma exports");
