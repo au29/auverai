@@ -63,9 +63,8 @@ export default function ContactPage() {
           </div>
         </div>
         <p className="mt-10 max-w-sm text-xs leading-6 text-muted-foreground">
-          AUVERAI Innovations is being established in Meydan Free Zone, UAE.
-          Project scope and availability are confirmed through direct
-          discussion.
+          {site.legalName} is registered in Meydan Free Zone, Dubai, UAE.
+          Get in touch to discuss a project, a partnership or a new opportunity.
         </p>
       </div>
       <ContactForm />

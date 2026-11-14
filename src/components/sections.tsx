@@ -140,7 +140,7 @@ export function Capabilities() {
       <div className="page-container">
         <div className="section-heading">
           <div>
-            <Eyebrow>What we’re here to build</Eyebrow>
+            <Eyebrow>What we do</Eyebrow>
             <h2 className="section-title mt-5">
               Different disciplines.
               <br />
@@ -148,8 +148,8 @@ export function Capabilities() {
             </h2>
           </div>
           <p className="section-description">
-            The capabilities behind our ventures—and the ways we aim to help
-            other businesses build what comes next.
+            The capabilities behind our ventures—and the technology services
+            we offer to help other businesses build what comes next.
           </p>
         </div>
         <div className="capability-grid relative mt-12 grid overflow-hidden rounded-2xl border border-transparent bg-card/50 shadow-md shadow-black/5 ring-1 ring-border md:grid-cols-2">
@@ -379,12 +379,12 @@ export function AboutPreview() {
               Open to possibility.
             </h2>
             <p className="mt-5 text-sm leading-6 text-muted-foreground">
-              AUVERAI is being established in Meydan Free Zone with a simple
-              belief: the best way to shape the future is to build something
-              useful.
+              AUVERAI is a technology and venture-building company registered
+              in Meydan Free Zone, Dubai. We believe the best way to shape the
+              future is to build something useful.
             </p>
             <p className="mt-4 text-sm leading-6 text-muted-foreground">
-              We’re bringing together technology, creativity and practical
+              We bring together technology, creativity and practical
               business thinking to develop ventures that can grow beyond a
               single industry.
             </p>

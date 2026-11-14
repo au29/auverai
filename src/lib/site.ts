@@ -1,5 +1,6 @@
 export const site = {
   name: "AUVERAI Innovations",
+  legalName: "AUVERAI Innovations L.L.C-FZ",
   tagline: "Building what’s next.",
   description:
     "AUVERAI brings technology, intelligence and ambition together to build digital products, develop new ventures and help businesses move forward.",

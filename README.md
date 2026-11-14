@@ -58,7 +58,7 @@ Next.js export documentation: https://nextjs.org/docs/app/guides/static-exports
 
 Optional public environment settings are documented in `.env.example`. They are compiled into the static export. Set them before building. Defaults are `https://auverai.com` and `contact@auverai.com`.
 
-The copy follows the supplied company brief: AUVERAI is being established, the venture ecosystem is intended, and inclusion does not assert legal ownership or launch status. No customers, testimonials, financial performance, certifications or launch claims were invented.
+Company copy reflects AUVERAI Innovations L.L.C-FZ as a registered company in Meydan Free Zone, Dubai, UAE, based on the supplied business licence issued on 11 November 2026. The venture ecosystem remains prospective; company registration does not establish individual venture ownership or launch status. No customers, testimonials, financial performance or venture launch claims were invented. The licence document and personal details are not published with the site.
 
 ## Contact behaviour
 

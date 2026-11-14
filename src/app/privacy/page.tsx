@@ -20,9 +20,10 @@ export default function PrivacyPage() {
             Using this website
           </h2>
           <p>
-            This website introduces AUVERAI Innovations and its intended
-            capabilities and ventures. It does not require an account. We have
-            not added advertising trackers or analytics cookies to this website.
+            This website is operated by {site.legalName}, a company registered
+            in Meydan Free Zone, Dubai, UAE. It introduces our capabilities and
+            venture concepts. It does not require an account. We have not added
+            advertising trackers or analytics cookies to this website.
           </p>
         </section>
         <section>

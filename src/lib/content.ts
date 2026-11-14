@@ -49,12 +49,12 @@ export const faqs = [
   {
     question: "What is AUVERAI Innovations?",
     answer:
-      "AUVERAI is a Dubai-based technology and venture-building company being established in Meydan Free Zone. It brings together product development, artificial intelligence, software engineering and business strategy to turn ideas into useful digital businesses.",
+      "AUVERAI is a technology and venture-building company registered in Meydan Free Zone, Dubai. We bring together product development, artificial intelligence, software engineering and business strategy to turn ideas into useful digital businesses.",
   },
   {
     question: "Do you build your own products or work with clients?",
     answer:
-      "Both are part of the model. AUVERAI’s direction combines building independent products and ventures with helping external businesses through dedicated AI, automation and technology services.",
+      "Both. We develop our own digital products and ventures, and help other businesses with AI, automation and technology projects.",
   },
   {
     question: "Are all the ventures shown already launched?",
@@ -64,7 +64,7 @@ export const faqs = [
   {
     question: "What kinds of projects are a good fit?",
     answer:
-      "New digital products, SaaS platforms, AI-powered workflows, business software and platform modernisation are all within the intended scope. Start with the problem you want to solve, and we can explore whether there is a fit.",
+      "We focus on digital products, SaaS platforms, AI-powered workflows, business software and platform modernisation. Start with the problem you want to solve, and we can explore whether there is a fit.",
   },
   {
     question: "How can we start a conversation?",

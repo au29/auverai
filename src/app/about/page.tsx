@@ -3,11 +3,12 @@ import { ArrowUpRight, Focus, Globe2, Layers3 } from "lucide-react";
 import Link from "next/link";
 import { Eyebrow, ContactCTA } from "@/components/sections";
 import { BrandMark } from "@/components/brand";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About AUVERAI",
   description:
-    "Meet AUVERAI Innovations, a Dubai-based technology and venture-building company being established in Meydan Free Zone.",
+    "Meet AUVERAI Innovations, a technology and venture-building company registered in Meydan Free Zone, Dubai, UAE.",
   alternates: { canonical: "/about/" },
 };
 
@@ -47,10 +48,10 @@ export default function AboutPage() {
         </div>
         <div className="space-y-5 text-base leading-8 text-muted-foreground">
           <p>
-            AUVERAI is a Dubai-based technology and venture-building company
-            being established in Meydan Free Zone, UAE. Our focus is to create,
-            develop and grow digital products, technology platforms and
-            independent businesses.
+            {site.legalName} is a technology and venture-building company
+            registered in Meydan Free Zone, Dubai, UAE. We create, develop and
+            grow digital products, technology platforms and independent
+            businesses.
           </p>
           <p>
             We believe useful innovation happens where disciplines meet. Product
@@ -58,8 +59,8 @@ export default function AboutPage() {
             new ways to operate. Business thinking gives it all a direction.
           </p>
           <p>
-            Our model brings together developing our own ventures and helping
-            external businesses through dedicated technology and AI services. It
+            We develop our own ventures and support other businesses through
+            dedicated technology and AI services. This combination
             gives us room to follow worthwhile problems across industries.
           </p>
         </div>
@@ -113,14 +114,14 @@ export default function AboutPage() {
             people and organisations.
           </p>
           <p className="mt-5 text-sm leading-7 text-muted-foreground">
-            We aim to do that one useful product, one thoughtful partnership and
+            We pursue that vision one useful product, one thoughtful partnership and
             one well-built venture at a time.
           </p>
           <Link
             href="/ventures/"
             className="mt-7 inline-flex items-center gap-3 text-sm font-medium hover:text-primary"
           >
-            Explore our intended ecosystem <ArrowUpRight className="size-4" />
+            Explore our venture concepts <ArrowUpRight className="size-4" />
           </Link>
         </div>
       </section>
