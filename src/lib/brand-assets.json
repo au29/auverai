@@ -1,8 +1,18 @@
 {
   "logo": {
-    "src": "/brand/auverai-logo.svg",
-    "width": 1678.64,
-    "height": 337.099
+    "src": "/brand/auverai-logo-compact.svg",
+    "source": "/brand/auverai-logo.svg",
+    "sourceWidth": 1678.64,
+    "width": 1490.6936534420884,
+    "height": 166.6782684326172,
+    "displayWidth": 150.96621138847817,
+    "wordmark": {
+      "x": 461.39404296875,
+      "y": 107.95654296875,
+      "width": 1217.2489013671875,
+      "height": 166.6782684326172
+    },
+    "gap": 89.62268829345697
   },
   "symbol": {
     "width": 371.771354675293,

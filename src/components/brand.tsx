@@ -39,7 +39,8 @@ export function Brand({ className }: { className?: string }) {
       alt="AUVERAI"
       width={Math.round(logo.width)}
       height={Math.round(logo.height)}
-      className={cn("block h-auto w-[170px] shrink-0", className)}
+      className={cn("block h-auto shrink-0", className)}
+      style={{ width: logo.displayWidth }}
     />
   );
 }

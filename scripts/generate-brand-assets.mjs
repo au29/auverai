@@ -1,8 +1,30 @@
 import sharp from "sharp";
-import { readFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 
 const { logo, symbol } = JSON.parse(
   await readFile("src/lib/brand-assets.json", "utf8"),
+);
+
+// Match the symbol to the wordmark's cap height without changing either shape.
+const sourceLogo = await readFile(`public${logo.source}`, "utf8");
+const sourcePaths = [...sourceLogo.matchAll(/<path\b[^>]*\/>/g)].map(([path]) => path);
+if (sourcePaths.length !== 9) {
+  throw new Error("Expected the nine vector layers from the supplied Figma logo");
+}
+const symbolPaths = sourcePaths.filter((path) => /id="Vector(?:_9)?"/.test(path));
+const wordmarkPaths = sourcePaths.filter((path) => !symbolPaths.includes(path));
+if (symbolPaths.length !== 2 || wordmarkPaths.length !== 7) {
+  throw new Error("The source logo layers no longer match the Figma geometry");
+}
+const symbolScale = logo.wordmark.height / symbol.height;
+const wordmarkOffset = symbol.width * symbolScale + logo.gap - logo.wordmark.x;
+await writeFile(
+  `public${logo.src}`,
+  `<svg xmlns="http://www.w3.org/2000/svg" width="${logo.width}" height="${logo.height}" viewBox="0 0 ${logo.width} ${logo.height}" fill="none">
+<g transform="scale(${symbolScale})">${symbolPaths.join("")}</g>
+<g transform="translate(${wordmarkOffset} ${-logo.wordmark.y})">${wordmarkPaths.join("")}</g>
+</svg>
+`,
 );
 
 // Reuse the original Figma SVGs and their relative bounds; never redraw the mark.
@@ -41,9 +63,12 @@ const social = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630
 await sharp(Buffer.from(social))
   .composite([
     {
-      input: await sharp(`public${logo.src}`).resize({ width: 250 }).png().toBuffer(),
+      input: await sharp(`public${logo.src}`)
+        .resize({ width: Math.round((250 * logo.width) / logo.sourceWidth) })
+        .png()
+        .toBuffer(),
       left: 80,
-      top: 65,
+      top: Math.round(65 + (logo.wordmark.y * 250) / logo.sourceWidth),
     },
     { input: await renderSymbol(164, 8), left: 873, top: 242 },
   ])
@@ -51,4 +76,4 @@ await sharp(Buffer.from(social))
   .toFile("public/social-card.png");
 await sharp(await renderSymbol(64, 7, "white")).toFile("public/icon.png");
 await sharp(await renderSymbol(180, 25, "white")).toFile("public/apple-icon.png");
-console.log("Generated social-card.png, icon.png and apple-icon.png from the Figma logo");
+console.log("Generated the compact logo, social-card.png, icon.png and apple-icon.png");
